@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/post.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light border-bottom d-none d-sm-block nav-top">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">q&a</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">privacy</a>
+                </li>
+            </ul>
+            <div class="d-flex social-zone">
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-instagram.png" alt="">
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-facebook.png" alt="">
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-youtube.png" alt="">
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-twitter.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg main_menu navbar-light bg-light border-bottom position-sticky" style="top: 0;z-index: 99">
+    <div class="container">
+        <a class="navbar-brand text-capitalize" href="#">
+            cryptovent
+            <!--            <img class="logo" src="assets/images/logo.png" alt="">-->
+        </a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobile-sidebar" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <img src="assets/images/menu_open_black_24dp.svg" alt="">
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <ul class="main_menu_list ul_li">
+                            <li class="nav-item">
+                                <a class="nav-link active material-zone" aria-current="page" href="#">
+                                    <span class="material-icons-outlined">home_work</span>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="material-zone" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="material-icons-outlined">analytics</span>
+                                    <span>Analysis</span>
+                                </a>
+                                <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                                    <li>
+                                        <a href="#" class="material-zone">
+                                            <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                            Bitcoin Analysis
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="material-zone">
+                                            <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                            Bitcoin Analysis
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="material-zone">
+                                            <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                            Bitcoin Analysis
+                                        </a>
+                                        <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                                            <li>
+                                                <a href="index.html" class="material-zone">
+                                                    <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                                    Bitcoin Analysis
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html" class="material-zone">
+                                                    <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                                    Bitcoin Analysis
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">article</span>
+                                    news
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">smart_display</span>
+                                    Videos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">newspaper</span>
+                                    Whitepapers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">event</span>
+                                    Events
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="#" class="btn btn-auth-dark d-flex align-items-center">
+                                    <span class="material-icons-outlined me-1">login</span>
+                                    Login
+                                </a>
+                                <a href="#" class="btn btn-auth-light d-flex align-items-center">
+                                    <span class="material-icons-outlined me-1">person_add</span>
+                                    Register
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main>
+    <section class="section-post-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="custom-card mb-3">
+                        <h3 class="mt-3">Polkadot Parachain Auctions Go Live</h3>
+                        <p>
+                            This fall, Polkadot’s parachain auctions got off to a roaring start. We’ve got all the information you need as to how these auctions work and how you can get involved.
+                        </p>
+                        <a href="#" class="btn btn-simple btn-sm mb-1">
+                            <span class="material-icons-outlined">share</span>
+                            facebook
+                        </a>
+                        <a href="#" class="btn btn-simple btn-sm mb-1">
+                            <span class="material-icons-outlined">share</span>
+                            twitter
+                        </a>
+                        <a href="#" class="btn btn-simple btn-sm mb-1">
+                            <span class="material-icons-outlined">share</span>
+                            linkedin
+                        </a>
+                        <a href="#" class="btn btn-simple btn-sm mb-1">
+                            <span class="material-icons-outlined">share</span>
+                            youtube
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="custom-card">
+                        <div class="category-item d-flex">
+                            <a href="#" class="badge bg-primary">
+                                <span class="material-icons-outlined category-icon">fiber_manual_record</span>
+                                bitcoin
+                            </a>
+                            <a href="#" class="badge bg-primary">
+                                <span class="material-icons-outlined category-icon">fiber_manual_record</span>
+                                bitcoin
+                            </a>
+                            <div class="post-date ms-2">
+                                <span class="material-icons-outlined">schedule</span>
+                                <span>27 september</span>
+                            </div>
+                        </div>
+                        <h3 class="mt-3">Polkadot Parachain Auctions Go Live</h3>
+                        <p>
+                            This fall, Polkadot’s parachain auctions got off to a roaring start. We’ve got all the information you need as to how these auctions work and how you can get involved.
+                        </p>
+                        <p>In case you’re new to Polkadot, or in need of a quick refresher, this guide also includes a general overview of parachains, parathreads, and everything Polkadot.</p>
+                        <h3>Will Every Polkadot Parachain Be Assigned Through an Auction?</h3>
+                        <p>Most parachains will be assigned through auctions. However, there’s one situation in which a project could be awarded a parachain slot without going through an auction. This applies to projects that are judged to be for the common good.</p>
+                        <p>As this suggests, such parachains must benefit the entire Polkadot network in perpetuity. Some examples of projects that might fall into this category would be a public utility chain or a network bridge. All such projects must pass a vote before being allocated an empty parachain slot.</p>
+                        <p>Polkadot’s developers argue that giving universally useful projects access to a parachain slot without competition mitigates the free rider problem, a well known issue in modern economics.</p>
+                        <p>The free rider problem states that competing parties – in this case, projects competing for a parachain slot – are unlikely to invest time and money building something that will benefit their competition.</p>
+                        <p>For example, a bridge from Polkadot to another network would benefit the entire Polkadot network enormously. However, any team building it would be using limited resources that they could, arguably, invest in attempting to win a parachain slot instead – to their own advantage.</p>
+                        <p>In other words, why would a given startup commit their resources to building a bridge and thereby risk missing out on a parachain slot?</p>
+                        <p>The free rider problem also hints at the fact that those teams that do not contribute toward building the bridge nonetheless will benefit from using the resulting bridge — without having contributed to it.</p>
+                        <p>By giving common good projects a fast track to a parachain slot, Polkadot thus aims to mitigate some of these thorny issues. You can read more about common good parachains here.</p>
+                        <h3>How Can You Get Involved in a Polkadot Parachain Crowdloan?</h3>
+                        <p>There are three ways to take part in a Polkadot crowdloan.</p>
+                        <p>Polkadot.JS is the official, fully decentralized Polkadot app. While this Polkadot app isn’t difficult to use per se, it is comparatively complicated for novice crypto users to navigate.</p>
+                        <p>Moreover, Polkadot.JS requires you to commit a minimum of 5 DOT tokens to a given crowdloan. By contrast, the minimum commitment is 0.1 DOT on most crypto exchanges.</p>
+                        <p>If you do decide to use Polkadot.JS, you’ll need to keep the following in mind. If your account balance falls below the existential deposit (ED) level (currently set at 1 DOT), the balance will be reaped, which is irreversible. To prevent this happening, check the “transfer with account keep-alive checks” option in the settings.</p>
+                        <p>It’s also worth bearing in mind that some projects do not support crowdloan contributions through Polkadot.JS. In this case, you’ll have to use options 2 or 3.</p>
+                        <h3>Use a Crypto Exchange</h3>
+                        <p>A number of crypto exchanges allow you to invest in projects competing for Polkadot parachain slots, including Huobi, Kraken, KuCoin, OKEx and Binance.</p>
+                        <p>There are several benefits to using an exchange. First and foremost is easier navigation, especially for inexperienced crypto users.</p>
+                        <p>As mentioned above, exchanges don’t require you to commit 5 DOT to partake in a crowdloan. Some only require as little as 0.1 DOT.</p>
+                        <p>To take part in a crowdloan using Binance, open Binance in a web browser, log in, click on “Finance,” and then click on “Binance Earn.”</p>
+                        <p>Some exchanges, including Binance, will give you the option of receiving tokens in exchange for the DOT you commit, allowing you to maintain your liquidity.</p>
+                        <p>On Binance, if a project you’ve committed DOT to wins a parachain auction, you’ll be able to use the “Convert to BDOT” feature within 45 days. This feature converts your bonded DOT tokens into BDOT, a tokenized asset with a value pegged to the value of DOT. You can sell, stake or keep these BDOT to exchange for your original DOT tokens once the parachain lease period expires.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="custom-card rounded p-3 p-md-4 mb-3 mt-3 mt-lg-0">
+                        <div class="d-flex mb-3">
+                            <a class="flex-shrink-0" href="#">
+                                <div class="avatar avatar-xl border border-4 border-danger rounded-circle">
+                                    <img class="avatar-img rounded-circle" src="assets/images/author-1.png" alt="avatar">
+                                </div>
+                            </a>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">morteza</h5>
+                                <p>Senior Editor</p>
+                            </div>
+                        </div>
+                        <p>Morteza Goodarzi is a senior editor for the Crypto Blog and also reports on breaking news based in London. He has written about government, criminal justice, and the role of money in politics since 2015.</p>
+                        <a href="#" class="btn btn-simple btn-sm">
+                            <span class="material-icons-outlined">visibility</span>
+                            View articles
+                        </a>
+                    </div>
+                    <div class="custom-card rounded p-3 p-md-4 mb-3 sticky-sidebar-top">
+                        <h3 class="mt-3">Polkadot Parachain Auctions Go Live</h3>
+                        <div class="post-sidebar-links">
+                            <a href="#">Polkadot Parachain Auctions Go Live</a>
+                            <a href="#">Polkadot Parachain Auctions Go Live</a>
+                            <a href="#">Polkadot Parachain Auctions Go Live</a>
+                            <a href="#">Polkadot Parachain Auctions Go Live</a>
+                            <a href="#">Polkadot Parachain Auctions Go Live</a>
+                            <a href="#">Polkadot Parachain Auctions Go Live</a>
+                            <a href="#">Polkadot Parachain Auctions Go Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-sidebar">
+               <div class="col-12 col-lg-8">
+                   <div id="comment-area">
+                       <h3>2 comments</h3>
+                       <div class="my-4 d-flex custom-card">
+                           <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/author-1.png" alt="avatar">
+                           <div>
+                               <div class="mb-2">
+                                   <h5 class="m-0">morteza</h5>
+                                   <span class="me-3 small">2022-01-12</span>
+                                   <a href="javascript:void(0);" data-comment-id="66" data-user="morteza" class="text-body fw-normal reply-comment">Reply</a>
+                               </div>
+                               <p>asdasd</p>
+                           </div>
+                       </div>
+                       <div class="my-4 d-flex custom-card">
+                           <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/author-1.png" alt="avatar">
+                           <div>
+                               <div class="mb-2">
+                                   <h5 class="m-0">morteza</h5>
+                                   <span class="me-3 small">2022-01-10</span>
+                                   <a href="javascript:void(0);" data-comment-id="15" data-user="morteza" class="text-body fw-normal reply-comment">Reply</a>
+                               </div>
+                               <p>This article contains links to third-party websites or other content for information purposes only (“Third-Party Sites”). The Third-Party Sites are not under the control of CoinMarketCap, and CoinMarketCap is not responsible for the content of any Third-Party Site, including without limitation any link contained in a Third-Party Site, or any changes or updates to a Third-Party Site</p>
+                           </div>
+                       </div>
+                       <div class="mt-3">
+                           <label for="content" class="form-label">Your Comment *</label>
+                           <textarea class="form-control" rows="3" name="content" id="content"></textarea>
+                       </div>
+                       <div class="mt-3">
+                           <button type="submit" class="btn btn-primary btn-submit-comment">Post Comment</button>
+                       </div>
+                   </div>
+               </div>
+                <div class="col-12 col-lg-4">
+                    <div class="custom-card mt-3 mt-lg-0 sticky-sidebar-top">
+                        <h3>related post</h3>
+                        <div class="divider d-block ms-0">
+                            <span></span>
+                        </div>
+                        <div class="swiper related-post h-auto">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="assets/images/blog/6.jpg">
+                                    </a>
+                                    <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4 hover">
+                                        <div class="w-100 mt-auto">
+                                            <a href="#" class="badge bg-primary mb-2">
+                                                <span class="material-icons-outlined category-icon">fiber_manual_record</span>
+                                                bitcoin
+                                            </a>
+                                            <a href="#" class="badge bg-danger mb-2">
+                                                <span class="material-icons-outlined category-icon">fiber_manual_record</span>
+                                                bitcoin
+                                            </a>
+                                            <h2><a href="#">Ten tell-tale signs you need to get a new startup.</a></h2>
+                                            <ul class="justify-content-center">
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="material-icons-outlined">person</span>
+                                                        <span class="">morteza</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <span class="material-icons-outlined">schedule</span>
+                                                    <span class="">25 min ago</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="assets/images/blog/6.jpg">
+                                    </a>
+                                    <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4 hover">
+                                        <div class="w-100 mt-auto">
+                                            <a href="#" class="badge bg-primary mb-2">
+                                                <span class="material-icons-outlined category-icon">fiber_manual_record</span>
+                                                bitcoin
+                                            </a>
+                                            <a href="#" class="badge bg-danger mb-2">
+                                                <span class="material-icons-outlined category-icon">fiber_manual_record</span>
+                                                bitcoin
+                                            </a>
+                                            <h2><a href="#">Ten tell-tale signs you need to get a new startup.</a></h2>
+                                            <ul class="justify-content-center">
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="material-icons-outlined">person</span>
+                                                        <span class="">morteza</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <span class="material-icons-outlined">schedule</span>
+                                                    <span class="">25 min ago</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-sidebar" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-danger">
+        <div class="d-flex align-items-center text-white position-relative">
+            <div class="avatar avatar-sm">
+                <img src="assets/images/account_circle_white_48dp.svg" alt="">
+            </div>
+            <span class="ms-1"><a href="#" class="stretched-link text-reset btn-link font-1">Login | Register</a></span>
+        </div>
+
+        <div class="d-flex justify-content-start">
+            <button type="button" class="btn float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/images/close_white_24dp.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column text-dark">
+            <li class="nav-item py-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search ...">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Go</button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="main_menu_inner navbar-collapse collapse show" id="main_menu_dropdown" style="">
+            <ul class="main_menu_list ul_li">
+                <li class="dropdown">
+                    <a class="nav-link active material-zone" aria-current="page" href="#">
+
+                        <span class="material-icons-outlined">home_work</span>
+                        Home
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                        <li><a href="#">Home default</a></li>
+                        <li><a href="#">Home style 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="shop_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">analytics</span>
+                        analysis
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                analysis item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                analysis item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                analysis item 3
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">article</span>
+                        News
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">smart_display</span>
+                        Video
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">newspaper</span>
+                        Whitepapers
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">event</span>
+                        Events
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">pages</span>
+                        Pages
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                about
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                Question & Answer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                Privacy
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-overlay">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col-lg-3">
+                    <img class="img-fluid footer-logo mb-3" src="assets/images/logo.png" alt="">
+                    <p class="text-start">A company profile is an introduction to your business that details what you sell, how you were founded, what your mission is, how you manufacture or source your products, and why you serve customers.</p>
+                    <div class="d-flex social-zone">
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-instagram.png" alt="">
+                        </a>
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-facebook.png" alt="">
+                        </a>
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-youtube.png" alt="">
+                        </a>
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-twitter.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h3>popular category</h3>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul class="nav flex-column text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">global analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">watchlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">exchanges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">exchanges</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>useful links</h3>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul class="nav flex-column text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bitcoin Cache Analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cryptocurrency Market Cap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bitcoin Dominance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Binance Coin Analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Binance Coin Analysis</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>pages</h3>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul class="nav flex-column text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">login | register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">question & answer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">privacy</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+    var swiper = new Swiper(".related-post", {
+        spaceBetween:10
+    });
+</script>
+</body>
+</html>
