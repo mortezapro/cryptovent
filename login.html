@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light border-bottom d-none d-sm-block nav-top">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">q&a</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">privacy</a>
+                </li>
+            </ul>
+            <div class="d-flex social-zone">
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-instagram.png" alt="">
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-facebook.png" alt="">
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-youtube.png" alt="">
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="assets/images/social/icons8-twitter.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg main_menu navbar-light bg-light border-bottom position-sticky" style="top: 0;z-index: 99">
+    <div class="container">
+        <a class="navbar-brand text-capitalize" href="#">
+            cryptovent
+            <!--            <img class="logo" src="assets/images/logo.png" alt="">-->
+        </a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobile-sidebar" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <img src="assets/images/menu_open_black_24dp.svg" alt="">
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <ul class="main_menu_list ul_li">
+                            <li class="nav-item">
+                                <a class="nav-link active material-zone" aria-current="page" href="#">
+                                    <span class="material-icons-outlined">home_work</span>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="material-zone" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="material-icons-outlined">analytics</span>
+                                    <span>Analysis</span>
+                                </a>
+                                <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                                    <li>
+                                        <a href="#" class="material-zone">
+                                            <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                            Bitcoin Analysis
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="material-zone">
+                                            <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                            Bitcoin Analysis
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="material-zone">
+                                            <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                            Bitcoin Analysis
+                                        </a>
+                                        <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                                            <li>
+                                                <a href="index.html" class="material-zone">
+                                                    <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                                    Bitcoin Analysis
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html" class="material-zone">
+                                                    <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                                    Bitcoin Analysis
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">article</span>
+                                    news
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">smart_display</span>
+                                    Videos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">newspaper</span>
+                                    Whitepapers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link material-zone" href="#">
+                                    <span class="material-icons-outlined">event</span>
+                                    Events
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-end">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a href="#" class="btn btn-auth-dark d-flex align-items-center">
+                                    <span class="material-icons-outlined me-1">login</span>
+                                    Login
+                                </a>
+                                <a href="#" class="btn btn-auth-light d-flex align-items-center">
+                                    <span class="material-icons-outlined me-1">person_add</span>
+                                    Register
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main>
+    <section class="section-login">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 offset-md-3 text-center">
+                    <div class="position-relative">
+                        <div class="login-card">
+                            <h1>login form</h1>
+                            <div class="divider">
+                                <span></span>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="password">
+                            </div>
+                            <div class="mb-3 form-check text-start">
+                                <input type="checkbox" class="form-check-input" id="remember">
+                                <label class="form-check-label" for="remember">remember me</label>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-simple w-100">
+                                    <span class="material-icons-outlined">login</span>
+                                    login
+                                </button>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-simple w-100">
+                                    <img class="login-img" src="assets/images/google-login-icon.png" alt=""/>
+                                    continue with google
+                                </button>
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-simple w-100">
+                                    forget password
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-sidebar" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-danger">
+        <div class="d-flex align-items-center text-white position-relative">
+            <div class="avatar avatar-sm">
+                <img src="assets/images/account_circle_white_48dp.svg" alt="">
+            </div>
+            <span class="ms-1"><a href="#" class="stretched-link text-reset btn-link font-1">Login | Register</a></span>
+        </div>
+
+        <div class="d-flex justify-content-start">
+            <button type="button" class="btn float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="assets/images/close_white_24dp.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column text-dark">
+            <li class="nav-item py-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search ...">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Go</button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="main_menu_inner navbar-collapse collapse show" id="main_menu_dropdown" style="">
+            <ul class="main_menu_list ul_li">
+                <li class="dropdown">
+                    <a class="nav-link active material-zone" aria-current="page" href="#">
+
+                        <span class="material-icons-outlined">home_work</span>
+                        Home
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                        <li><a href="#">Home default</a></li>
+                        <li><a href="#">Home style 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="shop_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">analytics</span>
+                        analysis
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="shop_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                analysis item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                analysis item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                analysis item 3
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">article</span>
+                        News
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                news item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">smart_display</span>
+                        Video
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                video item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">newspaper</span>
+                        Whitepapers
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                paper item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">event</span>
+                        Events
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                event item 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link material-zone" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons-outlined">pages</span>
+                        Pages
+                    </a>
+                    <ul class="submenu dropdown-menu" aria-labelledby="blog_submenu">
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                about
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                Question & Answer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link material-zone">
+                                <span class="material-icons-outlined font-2">radio_button_checked</span>
+                                Privacy
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-overlay">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col-lg-3">
+                    <img class="img-fluid footer-logo mb-3" src="assets/images/logo.png" alt="">
+                    <p class="text-start">A company profile is an introduction to your business that details what you sell, how you were founded, what your mission is, how you manufacture or source your products, and why you serve customers.</p>
+                    <div class="d-flex social-zone">
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-instagram.png" alt="">
+                        </a>
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-facebook.png" alt="">
+                        </a>
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-youtube.png" alt="">
+                        </a>
+                        <a href="#" class="nav-link">
+                            <img src="assets/images/social/icons8-twitter.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h3>popular category</h3>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul class="nav flex-column text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">global analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">watchlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">exchanges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">exchanges</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>useful links</h3>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul class="nav flex-column text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bitcoin Cache Analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cryptocurrency Market Cap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bitcoin Dominance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Binance Coin Analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Binance Coin Analysis</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>pages</h3>
+                    <div class="divider">
+                        <span></span>
+                    </div>
+                    <ul class="nav flex-column text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">login | register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">question & answer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">privacy</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+</script>
+</body>
+</html>
