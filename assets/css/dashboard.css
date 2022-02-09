@@ -51,5 +51,18 @@
 .dashboard-sidebar-item ul li a:hover{
   color: #1f67af;
 }
-
-
+#mobile-sidebar-dashboard .sidebar{
+  margin:0;
+}
+.navbar-toggler{
+  padding: .2em;
+}
+.material-2 .material-icons-outlined{
+  font-size: 2.5em;
+}
+a{
+  color: #53595f;
+}
+a:hover{
+  color: #1f67af;
+}

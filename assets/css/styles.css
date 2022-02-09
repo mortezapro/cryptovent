@@ -282,10 +282,10 @@ p{
     border: none;
     font-size: 16px;
     min-width: 210px;
-    padding: 20px 0px;
+    padding: 20px 0;
     color: #052840;
-    -webkit-box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
 .main_menu_list .submenu > li:not(:last-child) {
@@ -307,7 +307,7 @@ p{
 }
 .main_menu_list .submenu > li:hover > a, .main_menu_list .submenu > li.active > a {
     color: #2d2d2d;
-    background-color: #e8f3ff;
+    background-color: #f5f0f0;
 }
 .main_menu_list .submenu .dropdown > a:after {
     margin-top:0;
@@ -316,9 +316,9 @@ p{
     font-weight:900;
 }
 .main_menu_list .submenu .submenu {
-    top: 0px;
+    top: 0;
     left: 100%;
-    border-top-left-radius: 0px;
+    border-top-left-radius: 0;
 }
 .main_menu_list li:hover > .submenu,
 .main_menu_list li:hover > .megamenu {
@@ -343,8 +343,8 @@ p{
 .ul_li,
 .ul_li_right,
 .ul_li_center {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -381,8 +381,8 @@ p{
 }
 
 .ul_li_block {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     display: block;
 }
 .ul_li_block > li {
@@ -436,8 +436,8 @@ p{
         display: block !important;
         background-color: #ffffff;
 
-        -webkit-box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
     }
     .main_menu_inner.show {
         left: 0;
@@ -489,7 +489,7 @@ p{
     background: #53595f;
 }
 .submenu li:hover{
-    border-left: 2px solid #53595f;
+    border-left: 2px solid #1f67af;
 }
 footer{
     text-align: center;
@@ -716,6 +716,7 @@ footer ul li:hover{
     display: flex;
     font-size: .8em;
     color:#fcfcfc;
+    align-items: baseline;
 }
 .card-img-overlay ul li, .card-img-overlay-2 ul li{
     margin-right: 10px;
